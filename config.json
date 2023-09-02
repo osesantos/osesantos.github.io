@@ -3,13 +3,13 @@
   "social": {
     "github": "osesantos",
     "linkedin": "josé-filipe-dos-santos",
-    "email": "jfnfsantos@gmail.com",
+    "email": "jfnfsantos [at] gmail [dot] com",
     "blog": "https://osesantos.github.io/blog"
   },
   "funding": {
     "type": "Paypal",
     "url": "https://paypal.me/osesantos"
   },
-  "theme": "monokaisoda",
+  "theme": "terminixdark",
   "border": true
 }

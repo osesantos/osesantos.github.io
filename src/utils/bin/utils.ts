@@ -23,13 +23,14 @@ export const date = async (args: string[]): Promise<string> => {
 export const gui = async (args: string[]): Promise<string> => {
   window.open(`${config.social.blog}`, '_self');
 
-  return 'Opening GUI version...';
+  //return 'Opening GUI version...';
+  return `Comeback later, I'm still working on it :D`;
 };
 
 export const email = async (args: string[]): Promise<string> => {
-  window.open(`${config.social.email}`);
+  //window.open(`${config.social.email}`);
 
-  return `Opening mailto:${config.social.email}...`;
+  return `email: ${config.social.email}`;
 };
 
 export const vi = async (args: string[]): Promise<string> => {
@@ -76,7 +77,21 @@ export const banner = (args?: string[]): string => {
 ##     ## ##    ## ##       ##    ## ##     ## ##   ###    ##    ##     ## ##    ## 
  #######   ######  ########  ######  ##     ## ##    ##    ##     #######   ###### 
 
-bG9va2luZyBmb3IgYSByZWQgdGVhbWVyIG9yIGEgcGVudGVzdGVyPyBMZXQncyB0YWxrIDpE 
+bG9va2luZyBmb3IgYSByZWQgdGVhbWVyIG9yIGEgcGVudGVzdGVyPyBMZXQncyB0YWxrIDpE
+
+Hi 👋😄
+
+"Find something you love to do and you’ll never have to work a day in your life." - Arthur Szathmary
+ 
+I'm a SW Engineer by day and a bug bounty hunter by night. 
+Motivated to identify vulnerabilities, develop robust solutions, and collaborate with cross-functional teams.
+
+🔭 I’m currently working as full-stack engineer with Typescript, Javascript, React, and C#.
+🌱 I’m on a journey to obtain the [Security+](https://www.comptia.org/certifications/security) certification.
+👯 I’m looking to collaborate on Infosec projects/tools, go, rust and linux projects.
+📫 Feel free to reach me out.
+😄 I’m happy to learn and discuss any tech and cybersecurity related topic.
+⚡ Fun fact: When I'm not coding or hunting bugs, you'll find me hiking and kitesurfing – I love embracing the great outdoors! ⛰🏄‍.
 
 Type 'help' to see list of available commands.
 `;

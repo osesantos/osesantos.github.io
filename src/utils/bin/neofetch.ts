@@ -67,6 +67,29 @@ ossyNMMMNyMMhsssssssssssssshmmmhssssssso
             .-/+oossssoo+/-.
 `;
 
+const arch = `
+                   -\`
+                  .o+\`
+                 \`ooo/ 
+                \`+oooo:
+               \`+oooooo:
+               -+oooooo+: 
+             \`/:-:++oooo+:
+            \`/++++/+++++++:
+           \`/++++++++++++++:
+          \`/+++ooooooooooooo/\`
+         ./ooosssso++osssssso+\`
+        .oossssso-\`\`\`\`/ossssss+\`
+       -osssssso.      :ssssssso.
+      :osssssss/        osssso+++.
+     /ossssssss/        +ssssooo/-
+   \`/ossssso+/:-        -:/+osssso+-
+  \`+sso+:-\`                 \`.-/+oso:
+ \`++:.                           \`-/+/ 
+ .\`                                 \`/
+             btw I use Arch
+`;
+
 const getPlatform = (): 'Unknown' | 'Windows' | 'MacOS' | 'Linux' => {
   let os: 'Unknown' | 'Windows' | 'MacOS' | 'Linux' = 'Unknown';
 
@@ -110,7 +133,7 @@ const getArt = () => {
     case 'Windows':
       return `<p style="color: ${mainColor}">${windows}</p>`;
     case 'Linux':
-      return `<p style="color: ${mainColor}">${linux}</p>`;
+      return `<p style="color: ${mainColor}">${arch}</p>`;
   }
 };
 
@@ -142,7 +165,7 @@ const getInfo = () => {
   message += `<span style="color: ${mainColor}">Uptime</span>: ${formatDistanceToNow(
     visitedAt,
   )}\n`;
-  message += `<span style="color: ${mainColor}">Author</span>: ${packageJson.author.name} (${packageJson.author.email})\n`;
+  message += `<span style="color: ${mainColor}">Author</span>: ${packageJson.author.name} <a href="${packageJson.author.url}" target="_blank">${packageJson.author.url}</a>\n`;
   message += `<span style="color: ${mainColor}">Donate</span>: <a href="${config.funding.url}" target="_blank">${config.funding.type}</a>\n`;
 
   return message;

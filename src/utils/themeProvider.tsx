@@ -20,9 +20,7 @@ export const ThemeProvider: React.FC<Props> = ({ children }) => {
   const [theme, _setTheme] = useState<Theme>(Themes[0]);
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem('theme');
-
-    setTheme(savedTheme || config.theme);
+    setTheme(config.theme);
   }, []);
 
   const setTheme = (name: string) => {
