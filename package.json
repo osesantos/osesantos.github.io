@@ -1,10 +1,11 @@
 {
   "name": "terminal",
   "version": "3.0.1",
+  "homepage": "http://osesantos.github.io/",
   "license": "MIT",
   "author": {
     "name": "José Santos",
-    "url": "https://osesantos.github.io",
+    "url": "https://osesantos.github.io/",
     "email": "jfnfsantos@gmail.com"
   },
   "repository": {
@@ -19,7 +20,9 @@
     "preexport": "next build",
     "export": "next export",
     "lint": "eslint .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "dependencies": {
     "@m4tt72/matomo-tracker-react": "^0.6.2",
@@ -42,6 +45,7 @@
     "eslint-plugin-next": "^0.0.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
+    "gh-pages": "^6.0.0",
     "husky": "^8.0.3",
     "postcss": "^8.4.21",
     "prettier": "^2.8.7",
