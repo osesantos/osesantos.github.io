@@ -86,11 +86,11 @@ Hi 👋😄
 I'm a SW Engineer by day and a bug bounty hunter by night. 
 Motivated to identify vulnerabilities, develop robust solutions, and collaborate with cross-functional teams.
 
-🔭 I’m currently working as full-stack engineer with Typescript, Javascript, React, and C#.
+🔭 I’m currently working as a full-stack engineer with Typescript, Javascript, React, and C#.
 🌱 I’m on a journey to obtain the [Security+](https://www.comptia.org/certifications/security) certification.
-👯 I’m looking to collaborate on Infosec projects/tools, go, rust and linux projects.
-📫 Feel free to reach me out.
-😄 I’m happy to learn and discuss any tech and cybersecurity related topic.
+👯 I’m looking to collaborate on Infosec projects/tools, go, rust, and Linux projects.
+📫 Feel free to reach out.
+😄 I’m happy to learn and discuss any tech and cybersecurity-related topic.
 ⚡ Fun fact: When I'm not coding or hunting bugs, you'll find me hiking and kitesurfing – I love embracing the great outdoors! ⛰🏄‍.
 
 Type 'help' to see list of available commands.
