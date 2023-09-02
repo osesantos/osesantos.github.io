@@ -1,0 +1,15 @@
+{
+  "bioUrl": "https://raw.githubusercontent.com/osesantos/osesantos/main/README.md",
+  "social": {
+    "github": "osesantos",
+    "linkedin": "josé-filipe-dos-santos",
+    "email": "jfnfsantos@gmail.com",
+    "blog": "https://osesantos.github.io/blog"
+  },
+  "funding": {
+    "type": "Paypal",
+    "url": "https://paypal.me/osesantos"
+  },
+  "theme": "monokaisoda",
+  "border": true
+}
