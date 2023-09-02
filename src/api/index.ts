@@ -28,3 +28,9 @@ export const getQuote = async () => {
     quote: `“${data.content}” — ${data.author}`,
   };
 };
+
+export const getTools = async () => {
+  const data = await axios.all(config.tools);
+
+  return data.map((t) => `<a href="${t}" target="_blank">${t}</a>`).join(`\n`);
+};

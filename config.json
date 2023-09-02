@@ -10,6 +10,12 @@
     "type": "Paypal",
     "url": "https://paypal.me/osesantos"
   },
+  "tools": [
+    "https://gtfobins.github.io/",
+    "https://cyberchef.org/",
+    "https://crackstation.net/",
+    "https://www.revshells.com/"
+  ],
   "theme": "terminixdark",
   "border": true
 }

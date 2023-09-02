@@ -20,8 +20,8 @@ export const date = async (args: string[]): Promise<string> => {
   return new Date().toString();
 };
 
-export const gui = async (args: string[]): Promise<string> => {
-  window.open(`${config.social.blog}`, '_self');
+export const blog = async (args: string[]): Promise<string> => {
+  //window.open(`${config.social.blog}`, '_self');
 
   //return 'Opening GUI version...';
   return `Comeback later, I'm still working on it :D`;
