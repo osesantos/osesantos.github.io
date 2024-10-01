@@ -84,9 +84,9 @@ Hi 👋😄
 I'm a SW Engineer by day and a bug bounty hunter by night. 
 Motivated to identify vulnerabilities, develop robust solutions, and collaborate with cross-functional teams.
 
-🔭 I’m currently working as a full-stack engineer with C#, Typescript, Javascript, and React.
-🌱 I’m on a journey to learn Rust.
-👯 I’m looking to collaborate on projects/tools in go, rust, and Linux related projects.
+🔭 I’m currently working as a backend engineer with C# and k8s.
+🌱 I’m on a journey to take the HTB Certified Penetration Testing Specialist exam.
+👯 I’m looking to collaborate on projects/tools in go, rust, security, and Linux related projects.
 📫 Feel free to reach out.
 😄 I’m happy to learn and discuss any tech and cybersecurity-related topic.
 ⚡ Fun fact: When I'm not coding or hunting for bugs, you'll find me hiking and kitesurfing – I love embracing the great outdoors! ⛰🏄‍.
