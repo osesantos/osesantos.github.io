@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>My Adventure Building a Sweep Keyboard | OsE Blog</title>
+<meta name="keywords" content="keyboard, DIY, tech, personal-project">
+<meta name="description" content="My Adventure Building a Sweep Keyboard
+Here starts my journey as a blogger and technology enthusiast.
+My love for keyboards started when I decided that I wanted a small keyboard that it could make me more productive and that I could take with me everywhere. Until then I only used the laptop keyboards and the big membrane keyboards, and it was ok for all my life however when you are a software developer sometimes a regular keyboard is not enough. You want to stand out, you want to be different, you want to be that guy that you look and thinks &ldquo;wow if that guy uses that keyboard to write code then he should be the best :p&rdquo;.
+So I&rsquo;ve stater to look for the best alternative and, I want it all, I wanted lights, I wanted mechanical switches layers upon layers, compact design but also retro look, like those old white, gray and beige keyboards that you could find in the 90s.
+After some deep research I found what I thought would be a keyboard for the rest of my life, and damn I was wrong&hellip; I found the Vortex core 40% keyboard, it was perfect, it had everything I wanted, it was compact, it had lights, it had mechanical switches and it was retro looking. I ordered it and waited for it to arrive.
+Upon arrival I quickly realized that it would take me some time to really get the grasp of it, but it was ok. I was ready to learn, I was ready to adapt.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/building_sweep_kb/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.2211ca3164be7830024f6aad2b3a2e520843a64f8f048445c3401c1249aa051d.css" integrity="sha256-IhHKMWS&#43;eDACT2qtKzouUghDpk&#43;PBIRFw0AcEkmqBR0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/building_sweep_kb/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="OsE Blog (Alt + H)">OsE Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      My Adventure Building a Sweep Keyboard
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h1>
+    <div class="post-meta"><span title='2025-09-07 16:16:01 +0100 WEST'>September 7, 2025</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="my-adventure-building-a-sweep-keyboard">My Adventure Building a Sweep Keyboard<a hidden class="anchor" aria-hidden="true" href="#my-adventure-building-a-sweep-keyboard">#</a></h1>
+<p>Here starts my journey as a blogger and technology enthusiast.</p>
+<p>My love for keyboards started when I decided that I wanted a small keyboard that it could make me more productive and that I could take with me everywhere. Until then I only used the laptop keyboards and the big membrane keyboards, and it was ok for all my life however when you are a software developer sometimes a regular keyboard is not enough. You want to stand out, you want to be different, you want to be that guy that you look and thinks &ldquo;wow if that guy uses that keyboard to write code then he should be the best :p&rdquo;.
+So I&rsquo;ve stater to look for the best alternative and, I want it all, I wanted lights, I wanted mechanical switches layers upon layers, compact design but also retro look, like those old white, gray and beige keyboards that you could find in the 90s.
+After some deep research I found what I thought would be a keyboard for the rest of my life, and damn I was wrong&hellip; I found the Vortex core 40% keyboard, it was perfect, it had everything I wanted, it was compact, it had lights, it had mechanical switches and it was retro looking. I ordered it and waited for it to arrive.
+Upon arrival I quickly realized that it would take me some time to really get the grasp of it, but it was ok. I was ready to learn, I was ready to adapt.</p>
+<p><em>TODO: Add image of the Vortex Core Keyboard</em>
+<img alt="Vortex Core Keyboard" loading="lazy" src="/vortexcore.jpg"></p>
+<p>Fast forward some months I started to look at alternatives just for the fun of it, and then it was my fall, I got in the rabbit hole of custom keyboards. I started looking at all different shapes and sizes, and different layouts, switches, keys, firmware, hacks, etc, etc&hellip; It is a world so big that the more you look into it the more you risk uncovering keyboards so exotic that only a few people in the world would ever try them, and the ones that don&rsquo;t would look at you with thinking you are crazy.
+But I didn&rsquo;t care, I was hooked, I wanted to try some new keyboards.</p>
+<p>My next keyboard was the kyria with choc white switches, It was split keyboard, It was ergonomic, it had great documentation, it was open source, all that a newbie like me could want.
+The day it arrived I was so excited, that what was meant to be just a &ldquo;let me look at it&rdquo; turned into &ldquo;a full night of soldering and building&rdquo;. I was so excited that I didn&rsquo;t even care about the fact that I had to solder all the switches, I was ready to do it, I was ready to learn.
+In the end I managed to build it, and it was great, I loved every moment of it, I loved the sound, I loved the feel, I loved the look, I loved everything about it.
+And, I wanted to the geeky wierd train more, so, decided to take the on the fact that I now had white keycaps without any legends on them, to learn a new layout, the Colemak-DH layout, and I did it, I learned it, and now I can&rsquo;t go back to QWERTY. My brain is locked up to how fast it is to type in Colemak-DH.</p>
+<p><em>TODO: Add image of the Kyria Keyboard</em></p>
+<p>But I wanted more, I really like the old vortex core brown switches, and I wanted to try them but this time on a split keyboard, so why not just build a new one. This time my choice was the corne keyboard, it was small, it was compact, it was split, everything that I was used to.
+When it arrived I was so excited that I didn&rsquo;t even care about the fact that I had to solder all the switches, I was ready for another night smelling the soldering iron and listening to an old rock music.</p>
+<p><em>TODO: Add image of the Corne Keyboard</em></p>
+<p>But now, sometime after, I still missed the compactness of the kyria choc switches, and I wanted to take a step further into that big rabbit hole. So why not just build a smaller one?</p>
+<p>In a boring night of nothing to do, I end up looking at layouts of the sweep and realized that maybe, just maybe I could be able to work with it. So I end up ordering all the parts. Now was that time I realized that it was no longer a search for being more productive but it is a hobby, a passion, a way of life.
+Like the previous times, I did not care about the fact that I had to solder all the switches, I was ready for another night smelling the soldering iron while listening to some 90s.</p>
+<p><img alt="Sweep Keyboard" loading="lazy" src="/sweep.jpg"></p>
+<hr>
+<h2 id="the-project">The Project<a hidden class="anchor" aria-hidden="true" href="#the-project">#</a></h2>
+<p><em>Explain what the Sweep Keyboard is, its main features, and why you chose this model.</em></p>
+<p><strong>Image of the keyboard (e.g., unboxing)</strong><br>
+<code>![Sweep Keyboard Unboxing](path/to/image1.jpg)</code></p>
+<ul>
+<li>Layout and design</li>
+<li>Main components</li>
+<li>Goals of the build</li>
+</ul>
+<p><strong>Fun line:</strong></p>
+<blockquote>
+<p>This is not just a keyboard… it’s my tiny spaceship for typing adventures. 🚀</p></blockquote>
+<hr>
+<h2 id="the-process">The Process<a hidden class="anchor" aria-hidden="true" href="#the-process">#</a></h2>
+<p><em>Tell the story of assembling, soldering, testing, and adjusting the keyboard. Include photos and funny or challenging moments.</em></p>
+<p><strong>Image of the build in progress</strong><br>
+<code>![Build in Progress](path/to/image2.jpg)</code></p>
+<h3 id="step-1-preparation">Step 1: Preparation<a hidden class="anchor" aria-hidden="true" href="#step-1-preparation">#</a></h3>
+<ul>
+<li>List of materials</li>
+<li>Tools</li>
+<li>Expectations</li>
+</ul>
+<p><strong>Fun line:</strong></p>
+<blockquote>
+<p>Step 1: Gather all the tiny pieces. Step 2: Cry a little when you drop one on the floor. 😭</p></blockquote>
+<h3 id="step-2-assembly-and-soldering">Step 2: Assembly and Soldering<a hidden class="anchor" aria-hidden="true" href="#step-2-assembly-and-soldering">#</a></h3>
+<ul>
+<li>Tips and challenges</li>
+<li>Detailed photos of the process</li>
+</ul>
+<p><strong>Fun line:</strong></p>
+<blockquote>
+<p>If soldering were an Olympic sport, I’d be… well, let’s say I’m still training. 🥇🔧</p></blockquote>
+<h3 id="step-3-testing-and-final-adjustments">Step 3: Testing and Final Adjustments<a hidden class="anchor" aria-hidden="true" href="#step-3-testing-and-final-adjustments">#</a></h3>
+<ul>
+<li>How you tested the keys</li>
+<li>Small fixes and tweaks</li>
+</ul>
+<p><strong>Fun line:</strong></p>
+<blockquote>
+<p>The keys finally click. My heart clicks too. 💓</p></blockquote>
+<hr>
+<h2 id="learnings-and-tips">Learnings and Tips<a hidden class="anchor" aria-hidden="true" href="#learnings-and-tips">#</a></h2>
+<ul>
+<li>Things you learned about keyboards, soldering, or patience 😅</li>
+<li>Advice for anyone trying something similar</li>
+</ul>
+<p><strong>Fun line:</strong></p>
+<blockquote>
+<p>Patience is key… literally. And don’t forget: double-check your solder joints! ⚡</p></blockquote>
+<hr>
+<h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
+<p><em>Close the post with a personal note, excitement about the result, or an invitation to interact.</em></p>
+<p>Example:</p>
+<blockquote>
+<p>Seeing the completed keyboard working was incredibly satisfying. If you&rsquo;re thinking about building your own, don’t hesitate — it’s an amazing experience!</p></blockquote>
+<p><strong>Final image of the completed keyboard</strong><br>
+<code>![Finished Keyboard](path/to/image3.jpg)</code></p>
+<p><strong>Fun line:</strong></p>
+<blockquote>
+<p>Now, if only typing my emails felt this epic… 😎⌨️</p></blockquote>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/keyboard/">Keyboard</a></li>
+      <li><a href="http://localhost:1313/tags/diy/">DIY</a></li>
+      <li><a href="http://localhost:1313/tags/tech/">Tech</a></li>
+      <li><a href="http://localhost:1313/tags/personal-project/">Personal-Project</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">OsE Blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on OsE Blog</title>
-    <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on OsE Blog</description>
+    <title>Tech on OsE Blog</title>
+    <link>http://localhost:1313/tags/tech/</link>
+    <description>Recent content in Tech on OsE Blog</description>
     <generator>Hugo -- 0.149.1</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 07 Sep 2025 16:16:01 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Adventure Building a Sweep Keyboard</title>
       <link>http://localhost:1313/posts/building_sweep_kb/</link>
@@ -20,13 +20,6 @@ My love for keyboards started when I decided that I wanted a small keyboard that
 So I&amp;rsquo;ve stater to look for the best alternative and, I want it all, I wanted lights, I wanted mechanical switches layers upon layers, compact design but also retro look, like those old white, gray and beige keyboards that you could find in the 90s.
 After some deep research I found what I thought would be a keyboard for the rest of my life, and damn I was wrong&amp;hellip; I found the Vortex core 40% keyboard, it was perfect, it had everything I wanted, it was compact, it had lights, it had mechanical switches and it was retro looking. I ordered it and waited for it to arrive.
 Upon arrival I quickly realized that it would take me some time to really get the grasp of it, but it was ok. I was ready to learn, I was ready to adapt.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>First Post</title>
-      <link>http://localhost:1313/posts/first-post/</link>
-      <pubDate>Sun, 07 Sep 2025 12:25:20 +0100</pubDate>
-      <guid>http://localhost:1313/posts/first-post/</guid>
-      <description></description>
     </item>
   </channel>
 </rss>
