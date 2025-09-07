@@ -3,6 +3,8 @@ languageCode = 'en-us'
 title = 'OsE Blog'
 theme = 'PaperMod'
 
+enableEmoji = true
+
 [caches]
 [caches.images]
 dir = ':cacheDir/images'
