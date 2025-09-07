@@ -1,0 +1,8 @@
+baseURL = 'https://osesantos.github.io/'
+languageCode = 'en-us'
+title = 'OsE Blog'
+theme = 'PaperMod'
+
+[caches]
+[caches.images]
+dir = ':cacheDir/images'
